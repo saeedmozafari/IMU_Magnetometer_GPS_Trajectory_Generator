@@ -1,4 +1,4 @@
-#Developing Navigation Algorithms: A Toolbox for Reliable IMU and GNSS Trajectories
+# Sensor data generator: A Toolbox for Reliable IMU and GNSS Trajectories
 
 To create robust navigation algorithms, having a platform to generate dependable IMU (Inertial Measurement Unit) and GNSS (Global Navigation Satellite System) trajectories is imperative. This toolbox facilitates the provision of arbitrary data for your algorithm, drawing from the equations outlined in "Principles of GNSS, Inertial, and Multisensor Integrated Navigation Systems, 2nd Edition" authored by Professor Groves.
 
@@ -6,9 +6,34 @@ Usage Instructions:
 
 To employ this toolbox, follow the instructions below:
 
-[Step 1 instructionچ]
-[Step 2 instruction]
-[Step 3 instruction]
+1. Generating CSV File
 
-Using this toolbox we produce IMU and GPS trajectories via carrier kinematics , 
-It should be noted that there's an error in the implementation of equation 5.86 in Kinematics_NED.m and possibly also the inertial navigation equations.
+   * Generate a csv file from carrier motion with the following format:
+
+   % Column 1: time (sec)
+   % Column 2: latitude (deg)
+   % Column 3: longitude (deg)
+   % Column 4: height (m)
+   % Column 5: north velocity (m/s)
+   % Column 6: east velocity (m/s)
+   % Column 7: down velocity (m/s)
+   % Column 8: roll angle of body w.r.t NED (deg)
+   % Column 9: pitch angle of body w.r.t NED (deg)
+   % Column 10: yaw angle of body w.r.t NED (deg)
+
+2. Configuring Input File
+
+   * Open the main.m file.
+   * In the configuration section, specify the generated file's name in the "input_profile_name" variable.
+
+2. Configuring Input File
+
+2- Open main.m file. In configuration section,enter the name of previouse step generated file in "input_profile_name" variable.
+
+3- In configuration section, enter desired sensor configurations in the related scripts, including "IMU_Configuration",
+"GNSS_Configuration" and "Magnetometer_Configuration" scripts.
+
+4- Run the program. IMU data is recorded in "IMU_true" and "IMU_meas" matrixes.
+Magnetometer data is recorded in "MAG_true" and "MAG_meas" matrixes.
+GPS data is recorded in "GNSS_meas" matrixes. true and meas refer to ground
+truth and error included data respectively.
