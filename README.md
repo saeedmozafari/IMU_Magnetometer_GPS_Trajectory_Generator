@@ -1,6 +1,11 @@
-# Sensor data generator: A Toolbox for Reliable IMU and GNSS Trajectories
+# Sensor data generator: A Toolbox for Reliable IMU, Magnetometer and GNSS Trajectories
 
-To create robust navigation algorithms, having a platform to generate dependable IMU (Inertial Measurement Unit) and GNSS (Global Navigation Satellite System) trajectories is imperative. This toolbox facilitates the provision of arbitrary data for your algorithm, drawing from the equations outlined in "Principles of GNSS, Inertial, and Multisensor Integrated Navigation Systems, 2nd Edition" authored by Professor Groves.
+To create robust navigation algorithms, having a platform to generate 
+dependable IMU (Inertial Measurement Unit) and GNSS (Global Navigation 
+Satellite System) trajectories is imperative. This toolbox facilitates the 
+provision of arbitrary data for your algorithm, drawing from the equations
+ outlined in "Principles of GNSS, Inertial, and Multisensor Integrated 
+Navigation Systems, 2nd Edition" authored by Professor Groves.
 
 Usage Instructions:
 
@@ -11,20 +16,30 @@ To employ this toolbox, follow the instructions below:
    * Generate a csv file from carrier motion with the following format:
 
    % Column 1: time (sec)
+
    % Column 2: latitude (deg)
+
    % Column 3: longitude (deg)
+
    % Column 4: height (m)
+
    % Column 5: north velocity (m/s)
+
    % Column 6: east velocity (m/s)
+
    % Column 7: down velocity (m/s)
+
    % Column 8: roll angle of body w.r.t NED (deg)
+
    % Column 9: pitch angle of body w.r.t NED (deg)
+
    % Column 10: yaw angle of body w.r.t NED (deg)
 
 2. Configuring Input File
 
    * Open the main.m file.
-   * In the configuration section, specify the generated file's name in the "input_profile_name" variable.
+   * In the configuration section, specify the generated file's name in the
+     "input_profile_name" variable.
 
 3. Sensor Configuration
 
@@ -38,7 +53,7 @@ To employ this toolbox, follow the instructions below:
    * Recorded data:
       * IMU data: "IMU_true" and "IMU_meas" matrices.
       * Magnetometer data: "MAG_true" and "MAG_meas" matrices.
-      * GPS data: "GNSS_meas" matrices.
+      * GPS data: "GNSS_meas" matrice.
       * Note: "true" and "meas" denote ground truth and error-included data
         respectively.
 
