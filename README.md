@@ -1,4 +1,4 @@
-# Developing Navigation Algorithms: A Toolbox for Reliable IMU and GNSS Trajectories
+# Sensor data generator: A Toolbox for Reliable IMU and GNSS Trajectories
 
 To create robust navigation algorithms, having a platform to generate dependable IMU (Inertial Measurement Unit) and GNSS (Global Navigation Satellite System) trajectories is imperative. This toolbox facilitates the provision of arbitrary data for your algorithm, drawing from the equations outlined in "Principles of GNSS, Inertial, and Multisensor Integrated Navigation Systems, 2nd Edition" authored by Professor Groves.
 
