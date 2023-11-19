@@ -7,7 +7,9 @@ Usage Instructions:
 To employ this toolbox, follow the instructions below:
 
 1-[Step 1 instruction]
+
 2-[Step 2 instruction]
+
 3-[Step 3 instruction]
 
 Using this toolbox we produce IMU and GPS trajectories via carrier kinematics , 
