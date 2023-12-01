@@ -1,6 +1,6 @@
 %% Configuration ==========================================================
 % Input truth motion profile filename
-input_profile_name = 'Profile_3.csv';
+input_profile_name = 'Profile_0.csv';
 % Sensor configurations
 IMU_Configuration;
 GNSS_Configuration;
@@ -60,6 +60,7 @@ for epoch = 2:no_epochs
     [true_f_ib_b,true_omega_ib_b] = Kinematics_NED(tor_i,true_C_b_n,...
         old_true_C_b_n,true_v_eb_n,old_true_v_eb_n,true_L_b,true_h_b,...
         old_true_L_b,old_true_h_b);
+
     % Record IMU outputs
     IMU_true(epoch-1,1) = time;
     IMU_true(epoch-1,2:4) = true_f_ib_b';
