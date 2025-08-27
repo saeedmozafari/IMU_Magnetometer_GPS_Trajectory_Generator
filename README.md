@@ -37,7 +37,7 @@ To employ this toolbox, follow the instructions below:
 
 2. Configuring Input File
 
-   * Open the main.m file.
+   * Open the main_ECEF.m or main_NED.mfile.
    * In the configuration section, specify the generated file's name in the
      "input_profile_name" variable.
 
